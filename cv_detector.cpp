@@ -11,11 +11,11 @@ CvDetector::CvDetector(string cfg_path, string weights_path, int model_inputSize
 void CvDetector::load_model( string darknet_cfg, string darknet_weights){
 
     net = cv::dnn::readNetFromDarknet(darknet_cfg, darknet_weights);
-
+    cout << "LODING MODEL!"<< endl;
+  
+    // choose the backbend
 //    net.setPreferableBackend(cv::dnn::DNN_BACKEND_DEFAULT);
 //    net.setPreferableTarget(cv::dnn::DNN_TARGET_CPU);
-
-    cout << "LODING MODEL!"<< endl;
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
 
