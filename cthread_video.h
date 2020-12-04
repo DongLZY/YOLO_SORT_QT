@@ -48,15 +48,6 @@ private:
     const string darknet_weights = "./face_model/face.weights";   //模型文件
     const string darknet_names = "./face_model/face.names";       //类别文件
 
-//    const string darknet_cfg = "./pig/yolov3-tiny.cfg";           //网络文件
-//    const string darknet_weights = "./pig/yolov3-tiny_last.weights";   //模型文件
-//    const string darknet_names = "./pig/pig.names";       //类别文件
-
-
-//    const string darknet_cfg = "./pig/pig.cfg";           //网络文件
-//    const string darknet_weights = "./pig/pig_last.weights";   //模型文件
-//    const string darknet_names = "./pig/pig.names";       //类别文件
-
     std::vector<std::string> class_labels ;//类标签
 
 
